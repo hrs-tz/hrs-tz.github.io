@@ -1,0 +1,376 @@
+/* 
+default font sizes:
+    -h1: 120px
+    -h2: 60px
+    -h3: 28px
+*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 120px;
+}
+
+h2 {
+    font-size: 60px;
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 17px;
+    line-height: 30px;
+}
+
+body {
+    background: #F5F5F7;
+}
+
+.frame {
+    background: #fff;
+    border-radius: 20px;
+    margin: 10px 10px;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 30px 12px;
+}
+
+header img {
+    height: 40px;
+    width: 40px;
+}
+
+header a {
+    padding: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.filler {
+    visibility: hidden;
+}
+
+/* ↓↓ card ↓↓ */
+.card {
+    width: 200px;
+    height: 200px;
+    background: #fff;
+    padding: 50px 50px 50px 50px;
+    margin: 10px;
+    border-radius: 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+.card p{
+    font-size: 20px;
+}
+/* ↑↑ card ↑↑ */
+
+/* ↓↓ project card ↓↓ */
+.project-card {
+    width: 350px;
+    height: 500px;
+    background: #F5F5F7;
+    margin: 10px;
+    border-radius: 20px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #F5F5F7;
+
+    transition: 0.5s ease-in 1.2s;
+    opacity: 0;
+    transform: translateY(-100px);
+}
+
+.project-card.in-view {
+    opacity: 100%;
+    transform: translateY(0);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.project-card p{
+    font-size: 20px;
+}
+.project-card .content {
+    position: absolute;
+    bottom: 0;
+    background: rgb(241, 241, 241, 0.8);
+    color: #000;
+    width: 100%; 
+    height: 0%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    visibility: hidden;
+    transition: .5s ease;
+}
+
+.project-card:hover .content {
+    visibility: visible;
+    height: 100%;
+}
+
+.project-card h3 {
+    opacity: 80%;
+}
+
+/* ↑↑ project card ↑↑ */
+
+/* ↓↓ home ↓↓ */
+.home {
+    display: flex;
+    align-items: center;
+    padding: 0px 50px;
+    overflow: hidden;
+ }
+
+ .home h1 {
+    font-weight: 500;
+
+    opacity: 0%;
+    transform: translateY(-100px);
+    transition: 0.5s ease-in;
+ }
+
+ .home h1.in-view {
+    opacity: 100%;
+    transform: translateY(0);
+ }
+
+ .home h3 {
+    opacity: 50%;
+
+    transition: 1s ease-in 0.5s;
+ }
+
+ .home h3.in-view {
+    opacity: 50%;
+ }
+
+.home .photo-frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1800px;
+    padding: 100px 0px 0px 40px;
+    overflow: hidden;
+    rotate: 90deg;
+
+    border-radius: 0px 0px 500px 500px;
+
+    background-color: #D46747;
+}
+.home img {
+    width: 80%;
+    rotate: -90deg;
+    visibility: hidden;
+}
+
+.home .name {
+    font-family: "Sofia", sans-serif;
+    font-size: larger;
+    font-weight: 800;
+}
+
+.home .desc {
+    margin-top: 100px;
+    margin-right: 200px;
+    background: #F5F5F7;
+    padding: 20px 20px 72px 20px;
+    border-radius: 20px 20px 0 0 ;
+}
+
+.home .desc h3 {
+    margin-bottom: 20px;
+    opacity: 100%;
+    
+    transition: 1s ease-in 1s;
+}
+
+.home .desc h3.in-view {
+    opacity: 100%;
+}
+
+.home .desc p {
+    opacity: 100%;
+
+    transition: 1s ease-in 1.5s;
+}
+
+.home .desc p.in-view {
+    opacity: 100%;
+}
+/* ↑↑ home ↑↑ */
+
+/* ↓↓ skills ↓↓ */
+.skills {
+    padding: 80px 0px;
+    background: #F5F5F7;
+}
+
+.skills h2 {
+    padding: 0 50px;
+    padding-bottom: 50px;
+
+    opacity: 0;
+    transition: 1s ease-in;
+}
+
+.skills h2.in-view {
+    opacity: 100%;
+}
+
+.skills-display {
+    padding: 0 50px;
+    white-space: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    > div {
+        scroll-snap-align: center;
+      }
+
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: 0.5s ease-in 0.5s;
+}
+
+.skills-display::-webkit-scrollbar {
+    display: none;
+}
+
+.skills-display.in-view {
+    opacity: 100%;
+    transform: translateY(0);
+}
+
+/* ↑↑ skills ↑↑ */
+
+/* ↓↓ work ↓↓ */
+.work {
+    padding: 80px 0px;
+}
+
+.work h2 {
+    padding: 0 50px;
+    padding-bottom: 50px;
+
+    opacity: 0;
+    transition: 1s ease-in;
+}
+
+.work h2.in-view {
+    opacity: 100%;
+}
+
+.work-display {
+    padding: 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* ↑↑ work ↑↑ */
+
+/* ↓↓ footer ↓↓ */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+footer > p {
+    font-size: 14px;
+    opacity: 80%;
+}
+
+footer > a {
+    margin-left: 10px;
+}
+/* ↑↑ footer ↑↑ */
+
+@media screen and (max-width: 1232px) {
+    .home .desc {
+        margin-right: 100px;
+    }
+
+    .work-display {
+        padding: 50px;
+        display: block;
+        margin-top: -50px;
+        width: 100%;
+        white-space: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        
+        opacity: 0;
+        transform: translateY(-100px);
+        transition: 0.5s ease-in 0.5s;
+        
+        > div {
+            scroll-snap-align: center;
+        }
+    }
+
+    .work-display::-webkit-scrollbar {
+        display: none;
+    }
+
+    .work-display.in-view {
+        opacity: 100%;
+        transform: translateY(0);
+    }
+
+    .project-card {
+        display: inline-block;
+        transition: none;
+    }
+}
+
+@media screen and (max-width: 1092px) {
+    .home .photo-frame {
+        display: none;
+    }
+
+    .home .desc {
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    .project-card.second {
+        transition: 0.5s ease-in 1.4s;
+    }
+    
+    .project-card.third {
+        transition: 0.5s ease-in 1.6s;
+    }
+}
+
+
+

@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Sofia&display=swap" rel="stylesheet">
+    <title>Harry's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+          font-family: "Nunito", sans-serif;
+        }
+        </style>
+</head>
+<body>
+    <div class="frame">
+        <header>
+            <img src="./public/img/logo.PNG" alt="logo">
+            <div>
+                <a href="#home">Home</a>
+                <a href="#skills">Skills</a>
+                <a href="#work">Work</a>
+            </div>
+            <img src="./public/img/logo.PNG" alt="logo" class="filler">
+        </header>
+        <main>
+            <div id="home" class="home">
+                <div>
+                    <h1 class="animate">I'm <span class="name">Harry</span></h1>
+                    <h3 class="animate">Web Developer and UX/UI Enthusiast</h3>
+
+                    <div class="desc">
+                        <h3 class="animate">About</h3>
+                        <p class="animate">I'm a recent Computer Engineering graduate with a strong passion for front-end development and user-centered design. 
+                            Experienced in JavaScript, Vue.js, Node.js, and MongoDB through academic projects, I'm adept at building clean, responsive interfaces 
+                            and solving practical problems with code. 
+                            I'm currently looking for junior or internship-level roles to contribute and grow in a collaborative environment.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="photo-frame">
+                    <img src="./public/img/personal-image.png" alt="Personal Photo">
+                </div>
+    
+            </div>
+    
+            <div id="skills" class="skills">
+                <h2 class="animate">My Skills</h2>
+                <div class="skills-display animate">
+                    <div class="card">
+                        <img src="./public/icons/html5-brands.svg" alt="html-icon">
+                        <p>HTML</p>
+                    </div>
+                    <div class="card">
+                        <img src="./public/icons/css3-alt-brands.svg" alt="css-icon">
+                        <p>CSS</p>
+                    </div>
+                    <div class="card">
+                        <img src="./public/icons/js-brands.svg" alt="js-icon">
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="card">
+                        <img src="./public/icons/vuejs-brands.svg" alt="vue-icon">
+                        <p>Vue.js</p>
+                    </div>
+                    <div class="card">
+                        <img src="./public/icons/node-js-brands.svg" alt="node-icon">
+                        <p>Node.js</p>
+                    </div>
+                    <div class="card">
+                        <img src="./public/icons/database-solid.svg" alt="sql-icon">
+                        <p>Sql</p>
+                    </div>
+                    <div class="card">
+                        <img src="./public/icons/database-solid-2.svg" alt="mongo-icon">
+                        <p>NoSql</p>
+                    </div>
+                </div>
+            </div>
+            <div id="work" class="work">
+                <h2 class="animate">My Latest Work</h2>
+                <div class="work-display animate">
+                    <div class="project-card animate first" style="margin-top: 0;">
+                        <img src="./public/img/tdess-home-cropped.png" alt="tdess-thumbnail" style="height: 100%;">
+                        <div class="content">
+                            <h3>tdess</h3>
+                        </div>
+                    </div>
+                    <div class="project-card animate second" style="margin-top: 30px;">
+                        <img src="./public/img/tortoise-sign-in.png" alt="tortoise-thumbnail">
+                        <div class="content">
+                            <h3>tortoise</h3>
+                        </div>
+                    </div>
+                    <div class="project-card animate third" style="margin-top: 60;">
+                        <img src="./public/img/spot-landing-page.png" alt="spot-thumbnail" style="height: 100%;">
+                        <div class="content">
+                            <h3>spot</h3>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <footer>
+                <p>• Copyright © 2025 Charalampos Tzelepis •</p>
+                <a href="https://www.linkedin.com/in/charalampos-tzelepis/"><svg xmlns="http://www.w3.org/2000/svg" height="24" width="21" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#3a88fe" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+            </footer>
+        </main>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
